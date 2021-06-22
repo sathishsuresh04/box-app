@@ -1,0 +1,27 @@
+.table-container {
+  .sort-by.desc {
+    &:after {
+      content: "\e604";
+    }
+  }
+  .sort-by.asc {
+    &:after {
+      content: "\e607";
+    }
+  }
+  .sort-by {
+    &:after {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-family: "simple-line-icons", "untitled-font-6";
+      font-variant: normal;
+      font-weight: normal;
+      margin-left: 15px;
+      position: absolute;
+      right: 8px;
+      text-transform: none;
+      top: 10px;
+      width: 12px;
+    }
+  }
+}

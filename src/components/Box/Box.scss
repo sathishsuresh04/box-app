@@ -1,0 +1,76 @@
+body,
+input,
+textarea,
+keygen,
+select,
+button {
+  font-size: 14px;
+}
+input,
+textarea,
+select,
+button {
+  font-family: "Poppins", Verdana, Helvetica, Sans-Serif;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+label.required {
+  margin-right: 5px;
+}
+.required {
+  border-width: 1px !important;
+}
+label.required:after {
+  content: "*";
+  font-size: 13px;
+}
+.section-title {
+  color: #5c6375;
+  font-size: 14px;
+  margin-bottom: 0.2rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="number"],
+textarea,
+select,
+div[contenteditable="true"] {
+  border: none;
+  height: 30px;
+  border-bottom: 1px solid #d0d0d0;
+  width: 100%;
+  padding-left: 5px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0px;
+}
+
+.btn.btn-success {
+  color: white;
+  background: #64b867;
+}
+.btn {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 12px;
+  padding-top: 6px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  min-width: 80px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  text-align: center;
+  border: 1px solid transparent;
+  background: white;
+}
+.mr-3 {
+  margin-right: 1rem;
+}

@@ -6,7 +6,7 @@ const boxService = {
     return baseService.get(uris.BOXES);
   },
   saveBoxes: (box) => {
-    return baseService.post(uris.BOXES, data);
+    return baseService.post(uris.BOXES, box);
   },
 };
 export default boxService;

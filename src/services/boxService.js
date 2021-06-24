@@ -1,6 +1,5 @@
 import * as uris from "./serviceUris";
 import baseService from "./baseService";
-import { data } from "../data";
 const boxService = {
   getBoxes: () => {
     return baseService.get(uris.BOXES);

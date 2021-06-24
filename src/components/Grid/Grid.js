@@ -81,7 +81,27 @@ const Grid = ({ result }) => {
                       className={row.original.CssClass}
                     >
                       {row.cells.map((cell) => {
-                        return (
+                        return cell.column.isBackgroundColour ? (
+                          <td
+                            style={
+                              cell.column.isBackgroundColour
+                                ? {
+                                    backgroundColor: `rgb(${row.original.colour})`,
+                                  }
+                                : {}
+                            }
+                            className={
+                              cell.column.cssClass +
+                              `${
+                                cell.column.conditionalStyling !== null
+                                  ? " " +
+                                    cell.column.conditionalStyling(row, cell)
+                                  : ""
+                              }`
+                            }
+                            {...cell.getCellProps()}
+                          ></td>
+                        ) : (
                           <td
                             style={
                               cell.column.isBackgroundColour

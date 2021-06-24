@@ -1,0 +1,12 @@
+.inlineList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  white-space: nowrap;
+}
+
+li {
+  padding-left: 50px;
+}

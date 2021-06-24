@@ -47,10 +47,15 @@ const Box = () => {
     Rows: boxes,
     RowClick: null,
   };
-
+  function sumByProperty(items, prop) {
+    return items
+      .flat()
+      .reduce(function (a, b) {
+        return b[prop] == null ? a : a + b[prop];
+      }, 0)
+      .toFixed(2);
+  }
   const getBoxes = () => {
-    // var data = boxService.getBoxes();
-    // setBoxes(data);
     boxService.getBoxes().then((res) => {
       setBoxes(res);
     });
@@ -64,6 +69,12 @@ const Box = () => {
           <Grid result={result} />
         </div>
       </SectionContent>
+      <div className="section-title">
+        Total Weight :{sumByProperty(boxes, "weight")}
+      </div>
+      <div className="section-title">
+        Total Shipping Cost :{`${sumByProperty(boxes, "shippingCost")} SEK`}
+      </div>
     </React.Fragment>
   );
 };

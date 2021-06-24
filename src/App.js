@@ -10,7 +10,7 @@ function App() {
       <h1>Boxes App</h1>
       <BrowserRouter>
         <nav>
-          <ul>
+          <ul className="inlineList">
             <li>
               <Link to="/addbox">Add New Box</Link>
             </li>
